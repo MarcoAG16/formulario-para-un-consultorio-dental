@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Cita Dental</title>
+</head>
+<body>
+<h1>Agenda Tu Cita Dental</h1>
+  <form action="procesar_formulario.php" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    <br>
+    <br>
+    <label for="correo">Correo Electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+    <!-- En esta opcion se selecciona el correo de contacto que usara elpaciente -->
+    <br>
+    <br>
+    <label for="fecha">Fecha de Cita:</label>
+    <input type="date" id="fecha" name="fecha" required>
+    <!-- En esta opcion se selecciona la fecha de preferencia de la cita -->
+    <br>
+    <br>
+    <label for="hora">Hora de Cita:</label>
+    <input type="time" id="hora" name="hora" required>
+    <!-- Esta seccion se usa para seleccionar la hora de la cita -->
+    <br>
+    <br>
+    
+    <label for="servicio">Tipo de Servicio:</label>
+    <select id="servicio" name="servicio" required>
+      <option value="limpieza">Limpieza Dental</option>
+      <option value="extraccion">Extracción</option>
+      <option value="relleno">Relleno Dental</option>
+      <option value="ortodoncia">Ortodoncia</option>
+    </select>
+    <!-- Esta seccion es para seleccionar el tipo de servicio que se solicitara -->
+    <br>
+    <br>
+    <label for="comentarios">Comentarios:</label><br>
+    <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+    <!-- Esta opcion es para comentar algun dato extra o caso particular -->
+    <br>
+    <br>
+    <input type="submit" value="Agendar Cita">
+    <!-- En este boton se usa para confirmar los datos y enviarlos -->
+
+  </form>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
